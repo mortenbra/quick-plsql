@@ -7,6 +7,8 @@ For more information, see https://ora-00001.blogspot.com/2018/08/quick-plsql-cod
 
 sql_util_pkg and string_util_pkg from the Alexandria PL/SQL Utility Library (https://github.com/mortenbra/alexandria-plsql-utils)
 
+Minimum APEX version: 20.2
+
 ## Installation
 
 * Install the prerequisite packages (see above)

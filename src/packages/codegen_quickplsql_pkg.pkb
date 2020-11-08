@@ -350,7 +350,7 @@ begin
         end if;
       elsif p_subprogram_list(i).crud_operation = 'read' then
         output_line ('  begin');
-        if p_subprogram_list(i).subprogram_return like '%type' then
+        if substr(p_subprogram_list(i).subprogram_return,-5) = '%type' then
           output_line ('    select ' || get_value(p_subprogram_list(i).subprogram_return, '.', '%type'));
         else
           output_line ('    select *');
